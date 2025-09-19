@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  --color-primary: ;
+  --color-primary-dark: ;
+
+  --breakpoint-xs: 500px;
+}
+
+
+
+/*used===========*/
+
+.dash-btn{
+  @apply cursor-pointer border-none bg-transparent
+          text-sm lg:text-base
+          px-2 py-1  md:px-3 md:py-1
+          ml-1 mt-2 mb-1 sm:ml-2 sm:mb-2 md:mt-3 lg:ml-2 lg:mb-3
+}
+
+
+.text-h1-custom { /*hello*/
+  @apply text-2xl font-extrabold leading-tight text-gray-900 dark:text-gray-100 
+         md:text-3xl lg:text-4xl xl:text-4xl ;
+}
+
+.text-body-small {  /*welcome to ... */
+  @apply text-xs leading-relaxed text-gray-600 dark:text-gray-400 
+         sm:text-sm md:text-base lg:text-base xl:text-lg;
+}
+
+.text-button-custom {        /*add ticket*/
+  @apply text-xs  
+         text-white dark:text-white
+         sm:text-sm md:text-sm lg:text-base xl:text-base;
+}
+
+.text-button-custom-2{
+   @apply text-xs  
+         sm:text-sm md:text-sm lg:text-base xl:text-base;
+}
+
+
+.stat-txt{
+  @apply text-xs
+          sm:text-sm 
+}
+
+.stat-num{
+  @apply text-xl font-bold mt-2
+          sm:text-2xl lg:text-3xl
+}
+
+.text-h4-custom{   /*Recent tickets, add new ticket*/
+  @apply text-lg font-semibold leading-snug text-gray-900 dark:text-gray-100 
+         md:text-xl;
+}
+
+.toggle-btn-ico{   /*card , list */
+  @apply  cursor-pointer flex items-center gap-1   
+          text-xs md:text-sm 
+          px-2 py-2  md:px-3 md:py-2.5;
+}
+
+.toggle-selected{   /*toggle btn selected color*/
+  @apply bg-blue-600 text-white
+}
+
+.toggle-deafult{  /*toggle btn default color*/
+  @apply bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300
+}
+
+
+
+
+.search-tkt{
+  @apply   border rounded focus:outline-none dark:focus:outline-none focus:ring-0 bg-white dark:bg-gray-800 focus:border-blue-500 dark:focus:border-blue-500
+           text-sm
+           w-50 lg:w-80 md:w-70 sm:w-60
+           px-2 py-1.5 md:px-3 md:py-2
+}
+
+.filter-btn{
+          @apply cursor-pointer border rounded  bg-white dark:bg-gray-800
+          px-2 py-2 md:px-3 md:py-2.5 
+}
+
+.tkt-title{
+  @apply font-semibold text-gray-900 dark:text-gray-100
+          text-base sm:text-lg
+}
+
+.tkt-desc{
+  @apply  text-gray-500 dark:text-gray-400
+          text-xs sm:text-sm
+}
+
+.tkt-desc-2{
+  @apply  text-gray-700 dark:text-gray-300
+          text-xs sm:text-sm
+}
+
+.table-timeago{
+  @apply text-sm sm:text-base lg:text-lg
+}
+
+.form-titles{
+  @apply block  mb-1 text-gray-700 dark:text-gray-300
+          text-sm sm:text-base lg:text-lg
+}
+ 
+.text-err {
+  @apply mt-1 font-medium text-red-600 dark:text-red-400
+          text-xs md:text-sm ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------    not used  --------------*/
+/***********************************************/
+/* ===================== */
+/* Headings */
+/* ===================== */
+.text-h1 {
+  @apply text-3xl font-extrabold leading-tight text-gray-900 dark:text-gray-100 
+         md:text-4xl lg:text-5xl xl:text-6xl;
+}
+.text-h2 {
+  @apply text-2xl font-bold leading-snug text-gray-900 dark:text-gray-100 
+         md:text-3xl lg:text-4xl xl:text-5xl;
+}
+.text-h3 {
+  @apply text-xl font-semibold leading-snug text-gray-900 dark:text-gray-100 
+         md:text-2xl lg:text-3xl xl:text-4xl;
+}
+.text-h4 {
+  @apply text-lg font-semibold leading-snug text-gray-900 dark:text-gray-100 
+         md:text-xl lg:text-2xl xl:text-3xl;
+}
+
+/* ===================== */
+/* Body */
+/* ===================== */
+.text-body {
+  @apply text-base leading-relaxed text-gray-700 dark:text-gray-300 
+         md:text-lg lg:text-xl xl:text-xl;
+}
+.text-body-large {
+  @apply text-lg leading-relaxed text-gray-800 dark:text-gray-200 
+         md:text-xl lg:text-2xl xl:text-2xl;
+}
+.text-body-xs {
+  @apply text-xs leading-relaxed text-gray-500 dark:text-gray-400 
+         md:text-sm lg:text-sm xl:text-base;
+}
+
+
+/* ===================== */
+/* Buttons & UI */
+/* ===================== */
+.text-button {
+  @apply text-sm font-medium uppercase tracking-wide 
+         text-gray-800 dark:text-gray-200 
+         md:text-base lg:text-base xl:text-lg;
+}
+.text-error {
+  @apply text-sm font-medium text-red-600 dark:text-red-400 
+         md:text-base lg:text-base xl:text-lg;
+}
+.text-caption {
+  @apply text-xs text-gray-500 dark:text-gray-400 
+         md:text-sm lg:text-sm xl:text-base;
+}
+
+
+/***********************************************/
+
+
+
+/*
+:root {
+  font-family: "Poppins", sans-serif;
+
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+*/
