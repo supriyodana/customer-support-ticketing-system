@@ -1,7 +1,7 @@
 {
   "name": "customer-support-ticketing-system",
   "private": true,
-  "homepage": "https://sd-supriyo.github.io/customer-support-ticketing-system",
+  "homepage": "https://sd-supriyo.github.io/customer-support-ticketing-system/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "preview": "vite preview",
 
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
     
   },
   "dependencies": {
