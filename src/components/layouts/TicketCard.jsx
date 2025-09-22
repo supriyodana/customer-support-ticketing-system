@@ -9,7 +9,6 @@ import { shortText, timeAgo, statusBadge, priorityBadge } from '../../utils/tick
 
 
 
-//TicketCard --> props: ticket : object , onDelete(id) , onStatusChange(id, newStatus)
 
 export default function TicketCard({ ticket, onDelete, onStatusChange }) {
   const { id, title, description, priority, status, createdAt, comments = [] } = ticket;
