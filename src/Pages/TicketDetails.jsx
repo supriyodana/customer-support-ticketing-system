@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { getTickets, saveTickets, updateTicket, deleteTicket } from '../utils/storage'
+
 import BackToDashboard from "../components/layouts/BackToDashboard";
-import { SendOutlined } from '@ant-design/icons';
 import DeleteConfirm from "../components/modals/DeleteConfirm";
+
+import { getTickets, saveTickets, updateTicket, deleteTicket } from '../utils/storage'
+
+import { SendOutlined } from '@ant-design/icons';
+
 
 
 export default function TicketDetails() {
@@ -126,8 +130,6 @@ export default function TicketDetails() {
                         </button>
                     </form>
                 </div>
-
-
 
                 <div className="mt-6">
                     <h3 className="text-xs text-gray-500 dark:text-gray-400 font-medium">Comments</h3>   {/*text-base md:text-lg font-semibold*/}

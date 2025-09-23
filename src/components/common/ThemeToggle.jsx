@@ -1,10 +1,6 @@
 import React from "react";
-
-import {Sun, Moon, icons} from 'lucide-react';
+import {Sun, Moon} from 'lucide-react';
 import { useTheme } from "../../context/ThemeContext";
-
-
-
 
 
 

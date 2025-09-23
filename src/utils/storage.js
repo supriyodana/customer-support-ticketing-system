@@ -1,6 +1,7 @@
 
 const KEY = 'tickets_v1'
 
+
 export function getTickets() {
   try {
     return JSON.parse(localStorage.getItem(KEY) || '[]')
@@ -8,6 +9,7 @@ export function getTickets() {
     return []
   }
 }
+
 
 export function saveTickets(tickets) {
   localStorage.setItem(KEY, JSON.stringify(tickets))

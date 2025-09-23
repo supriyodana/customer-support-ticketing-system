@@ -1,7 +1,7 @@
 export default function generateId() {    
   const prefix = "TKT";
 
-  console.log(" all ok ... importing from correct place ...  ");
+  //console.log(" all ok ... impotring from correct place ...  ");
 
   const now = Date.now().toString();
   const timePart = now.slice(-4);

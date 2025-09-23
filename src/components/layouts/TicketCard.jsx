@@ -2,9 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 import { HiDotsVertical } from "react-icons/hi";
-
 import TicketActionMenu from "../modals/TicketActionMenu";
-
 import { shortText, timeAgo, statusBadge, priorityBadge } from '../../utils/ticketHelpers';
 
 

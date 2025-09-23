@@ -1,11 +1,12 @@
-
 import React, { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
+import ThemeToggle from '../components/common/ThemeToggle'
 import TicketCard from '../components/layouts/TicketCard'
 import TicketTable from '../components/layouts/TicketTable'
-import { getTickets, saveTickets, updateTicket, deleteTicket } from '../utils/storage'
-import ThemeToggle from '../components/common/ThemeToggle'
+import FilterMenu from '../components/modals/FilterMenu';
 
+import { getTickets, updateTicket, deleteTicket } from '../utils/storage'
 import seedTicketIfEmpty from '../utils/seedTicket'
 
 import { PlusOutlined } from '@ant-design/icons'
@@ -13,7 +14,7 @@ import { IoFilterOutline } from "react-icons/io5";
 import { BsListTask, BsGrid } from "react-icons/bs";
 import { Empty } from 'antd';
 
-import FilterMenu from '../components/modals/FilterMenu';
+
 
 
 
@@ -88,7 +89,7 @@ export default function Dashboard() {
         </div>
 
         <div className="flex items-center gap-3">
-          <ThemeToggle/>
+          <ThemeToggle />
           <button
             onClick={() => navigate('/add')}
             className="min-w-29 px-4 py-2  bg-blue-600 hover:bg-blue-700 text-button-custom rounded shadow cursor-pointer "
@@ -197,64 +198,6 @@ export default function Dashboard() {
                 onClose={() => setShowFilterMenu(false)}
               />
             )}
-
-            {/*
-            {showFilterMenu && (
-              <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow z-10 p-3">
-                <div className="mb-3">
-                  <div className="text-xs text-gray-500 mb-1">Status</div>
-                  <select
-                    value={filterStatus}
-                    onChange={(e) => setFilterStatus(e.target.value)}
-                    className="w-full p-2 border rounded bg-white dark:bg-gray-700 text-sm"
-                  >
-                    <option value="all">All</option>
-                    <option value="open">Open</option>
-                    <option value="in progress">In Progress</option>
-                    <option value="resolved">Resolved</option>
-                  </select>
-                </div>
-
-                <div className="mb-3">
-                  <div className="text-xs text-gray-500 mb-1">Priority</div>
-                  <select
-                    value={filterPriority}
-                    onChange={(e) => setFilterPriority(e.target.value)}
-                    className="w-full p-2 border rounded bg-white dark:bg-gray-700 text-sm"
-                  >
-                    <option value="all">All</option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                  </select>
-                </div>
-
-                <div className="flex justify-between">
-                  <button
-                    onClick={() => {
-                      setShowFilterMenu(false)
-                      refresh()
-                    }}
-                    className="cursor-pointer px-3 py-2 text-sm"
-                  >
-                    Apply
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      handleClearFilters()
-                      setShowFilterMenu(false)
-                    }}
-                    className="cursor-pointer px-3 py-2 text-sm text-gray-500"
-                  >
-                    Clear
-                  </button>
-                </div>
-              </div>
-            )}
-            */}
-
-
 
           </div>
 

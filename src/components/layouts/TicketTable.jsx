@@ -2,9 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiDotsVertical } from "react-icons/hi";
 import { FullscreenOutlined } from '@ant-design/icons'
-
 import TicketActionMenu from "../modals/TicketActionMenu";
-
 import { shortText, timeAgo, statusBadge, priorityBadge } from "../../utils/ticketHelpers";
 
 

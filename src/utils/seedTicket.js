@@ -3,6 +3,8 @@ import generateId from "./idGenerator"
 
 
 
+
+
 export default function seedTicketIfEmpty() {
   const existing = getTickets()
   if (existing.length > 0) return
@@ -14,7 +16,7 @@ export default function seedTicketIfEmpty() {
       description: 'User reports that login fails with "invalid credentials" though password is correct.',
       priority: 'high',
       status: 'open',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 2).toISOString(), // 2 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 2).toISOString(), 
       comments: [
         { text: 'Asked user to reset password', timestamp: new Date().toISOString() }
       ]
@@ -25,7 +27,7 @@ export default function seedTicketIfEmpty() {
       description: 'Request to export tickets as CSV from dashboard.',
       priority: 'low',
       status: 'in progress',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 7).toISOString(), // 7 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 7).toISOString(), 
       comments: []
     },
     {
@@ -34,7 +36,7 @@ export default function seedTicketIfEmpty() {
       description: 'Payments sometimes time out during peak hours — investigate queueing.',
       priority: 'high',
       status: 'open',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 5).toISOString(), // 5 hours ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 5).toISOString(), 
       comments: [
         { text: 'Assigned to backend team', timestamp: new Date().toISOString() }
       ]
@@ -45,7 +47,7 @@ export default function seedTicketIfEmpty() {
       description: 'Small typo in the installation section (s/instalation/installation/).',
       priority: 'low',
       status: 'resolved',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 14).toISOString(), // 14 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 14).toISOString(), 
       comments: []
     },
     {
@@ -54,7 +56,7 @@ export default function seedTicketIfEmpty() {
       description: 'Layout overlaps header on small viewport heights.',
       priority: 'medium',
       status: 'in progress',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 1).toISOString(), // 1 day ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 1).toISOString(), 
       comments: []
     },
 
@@ -64,7 +66,7 @@ export default function seedTicketIfEmpty() {
       description: 'User reports that login fails with "invalid credentials" though password is correct.User reports that login fails with "invalid credentials" though password is correct.',
       priority: 'high',
       status: 'open',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 10).toISOString(), // 10 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 10).toISOString(), 
       comments: [
         { text: 'Asked user to reset password', timestamp: new Date().toISOString() }
       ]
@@ -75,7 +77,7 @@ export default function seedTicketIfEmpty() {
       description: 'CSV from dashboard.Request to export tickets as CSV from dashboard.export tickets as CSV fromexport tickets as CSV fromexport tickets as CSV fromexport tickets as CSV from',
       priority: 'low',
       status: 'in progress',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 9).toISOString(), // 9 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 9).toISOString(), 
       comments: []
     },
     {
@@ -84,7 +86,7 @@ export default function seedTicketIfEmpty() {
       description: 'Payments sometimes time out during peak hours — investigate queueing.during peak hours — investigate queueing.during peak hours — investigate queueing.during peak hours — investigate queueing.during peak hours — investigate queueing.',
       priority: 'high',
       status: 'open',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 9).toISOString(), // 9 hours ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 9).toISOString(), 
       comments: [
         { text: 'Assigned to backend team', timestamp: new Date().toISOString() }
       ]
@@ -95,7 +97,7 @@ export default function seedTicketIfEmpty() {
       description: 'Small typo in the installation section (s/instalation/installation/).',
       priority: 'low',
       status: 'resolved',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 14).toISOString(), // 14 days ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 14).toISOString(), 
       comments: []
     },
     {
@@ -104,7 +106,7 @@ export default function seedTicketIfEmpty() {
       description: 'Layout overlaps header on sLayout overlaps header on small viewport heights.mall viewport heights.LayLayout overlaps header on small viewport heights.out overlaps header on small viewport heights.',
       priority: 'medium',
       status: 'in progress',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 22).toISOString(), // 1 day ago
+      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 22).toISOString(),
       comments: []
     }
   ]
