@@ -5,6 +5,7 @@ import BackToDashboard from "../components/layouts/BackToDashboard";
 import DeleteConfirm from "../components/modals/DeleteConfirm";
 
 import { getTickets, saveTickets, updateTicket, deleteTicket } from '../utils/storage'
+import { timeAgo } from "../utils/ticketHelpers";
 
 import { SendOutlined } from '@ant-design/icons';
 
@@ -31,7 +32,7 @@ export default function TicketDetails() {
 
     if (!ticket) return null;
 
-
+    /*
     const timeAgo = (dateString) => {
         const now = new Date();
         const past = new Date(dateString);
@@ -45,6 +46,7 @@ export default function TicketDetails() {
         if (diffHours < 24) return `${diffHours} hr ago`;
         return `${diffDays} day${diffDays > 1 ? "s" : ""} ago`;
     };
+    */
 
 
     function saveStatus(newStatus) {
