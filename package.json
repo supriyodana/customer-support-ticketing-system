@@ -1,18 +1,16 @@
 {
+  "homepage": "https://supriyodana.github.io/customer-support-ticketing-system",
   "name": "customer-support-ticketing-system",
-  "private": true,
-  "homepage": "https://sd-supriyo.github.io/customer-support-ticketing-system/",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-    
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
