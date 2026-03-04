@@ -1,8 +1,4 @@
 
-
-[VISIT - ](https://supriyodana.github.io/customer-support-ticketing-system/)
-
-
 ## About
 
 A frontend-focused ticketing system where tickets are stored in locally.
@@ -49,3 +45,7 @@ src/
   routes/
   utils/
 ```
+
+### Live Link
+
+[https://supriyodana.github.io/customer-support-ticketing-system/](https://supriyodana.github.io/customer-support-ticketing-system/)
