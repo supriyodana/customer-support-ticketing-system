@@ -32,21 +32,7 @@ export default function TicketDetails() {
 
     if (!ticket) return null;
 
-    /*
-    const timeAgo = (dateString) => {
-        const now = new Date();
-        const past = new Date(dateString);
-        const diffMs = now - past;
-        const diffMinutes = Math.floor(diffMs / (1000 * 60));
-        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
-        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 
-        if (diffMinutes < 1) return "just now";
-        if (diffMinutes < 60) return `${diffMinutes} min ago`;
-        if (diffHours < 24) return `${diffHours} hr ago`;
-        return `${diffDays} day${diffDays > 1 ? "s" : ""} ago`;
-    };
-    */
 
 
     function saveStatus(newStatus) {
